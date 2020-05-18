@@ -1,0 +1,152 @@
+﻿<?php
+ session_start();
+if(!isset($_SESSION['username']))
+{
+header("location:login.php");
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+?>
+
+<html>
+
+<head>
+<style type="text/css">
+
+
+input {
+color:#CC6600; font-size:27px;
+
+float:none;
+}
+
+
+#su {width:1099px;
+height:300px; font-family:Arial, Helvetica, sans-serif;
+font-size:19px;
+
+
+float:right;
+position:absolute;
+  }
+ #su ul { list-style-type:none;
+  
+  
+  }
+#su li { 
+position:relative;
+float:right;
+margin-left:50px;
+}
+#su li:hover  {background:FF33;}
+
+
+#abd {     border:13px solid #3333FF ; width:1000px; height:200px;
+
+
+ 
+
+
+ }
+#java {
+background-image:url(c11.PNG) ;
+
+
+}
+#mu {
+float:inherit;
+
+}
+
+
+
+#a  {background-image:url(C22.PNG);
+url:<b><a href="do.html"a>احجز الان</a></b>;
+
+  }
+  #b {  background-image:url(C33.PNG);
+}
+
+
+
+
+
+
+body {background-color:#cbc8ce;
+</style>
+
+
+</head>
+
+<body">
+<p align="center"><font size="6"><b>نظام ادراة مستشفى</b></font></p>
+<br/>
+</ul>
+<div id="su">
+<ul>
+<li> <a href="do.html"a>اضافة طبيب</a></li>
+<li> <a href="cx.html"a>اضافة قسم </a></li>
+<li> <a href="mar.html"a>اضافة مريض</a></li>
+<li> <a href="ar.html"a>الايرادات</a></li>
+
+<li> <a href="aa.html"a>المعمل</a></li> 
+<li> <a href="asl.html"a>الايصالات</a></li>
+<li> <a href="infor.html"a>معلومات عن النظام </a></li>
+
+
+</ul>
+</br>
+<br/>
+<br/>
+
+<table border="1" width="88%" align="right" bordercolor="#000000">
+<tr>
+<td width="44%" align="center"><b> خدمــــــــــــــات</b></td>
+
+<table>
+<br/>
+<table border="0" width="22%" align="right" bordercolor="#000000">
+<tr>
+<td width="22%" align="center">  
+
+<form>
+
+<br/>
+<form>
+ <b></b></td>
+<td width="44" align="center"><b></b></td>
+<td width="44" align="center"><b></b></td>
+
+
+<table>
+<table id="abd" border="0" align="right" cellpadding"7">
+</tr>
+
+<tr>
+
+<td id="java"></td>
+
+<td id="a">
+
+
+
+
+</td>
+<td id="b"></td>
+</tr>
+<table>
+</div>
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>نظام ادارة مستشفى</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/slider-style.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css" />
+
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+      <link rel="shortcut icon" href="img/favicon.png">
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <style type="text/css">
+
+
+input {
+color:#CC6600; font-size:27px;
+
+float:none;
+}
+
+
+#su {width:1099px;
+height:300px; font-family:Arial, Helvetica, sans-serif;
+font-size:19px;
+
+
+float:right;
+position:absolute;
+  }
+ #su ul { list-style-type:none;
+  
+  
+  }
+#su li { 
+position:relative;
+float:right;
+margin-left:50px;
+}
+#su li:hover  {background:FF33;}
+
+
+#abd {     border:13px solid #3333FF ; width:1000px; height:200px;
+
+
+ 
+
+
+ }
+#java {
+background-image:url(c11.PNG) ;
+
+
+}
+#mu {
+float:inherit;
+
+}
+
+
+
+#a  {background-image:url(C22.PNG);
+url:<b><a href="do.html"a>احجز الان</a></b>;
+
+  }
+  #b {  background-image:url(C33.PNG);
+}
+
+
+
+
+
+
+body {background-color:#cbc8ce;
+</style>
+
+	  
+	  <script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript'>
+$(document).ready(
+function() {
+$('#w').change(function() {
+var color =(this).val();
+$('#m').css('background',color);
+
+});
+
+});
+
+</script>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+   </head>
+   <body>
+
+     <div class="row clearfix header">
+              <div class="col-md-12 column header-top">
+                  <div class="center">
+                           <div class="col-md-4 column logo">
+                                                 <a class="orb" href=""><img src="img/logo.png" />نظام ادارة مستشفى</a>
+                  </div>
+
+                    <div class="col-md-4 column search">
+                        <form>
+
+                        </form>
+                  </div>
+                         <div class="col-md-4 column lang">
+                        <a href="#">AR</a>
+                         <a href="#">EN</a>
+
+						 <a href="#">عبده</a>
+                         <a href="#">خروج</a>
+
+						 
+						 <br/>
+						 <input id ="w"    type="color"/
+<textarea required="required" name="text" cols=1 rows=1></textarea>
+<br/>
+<input type="submit" value="تغير الون"/>
+						 
+						 
+						 
+                  </div>
+
+
+                                           </div>
+                                 </div>
+                                  <div class="col-md-12 column header-bottom">
+                                     <div class="center">
+                                              <div class="col-md-2 column last-news ">
+                                     </div>
+                                                   <div class="col-md-7 column marquee">
+                                           <marquee>
+
+                                           </marquee>
+
+
+
+           </div>
+     <span id="sl_play" class="sl_command"></span>
+     <span id="sl_pause" class="sl_command"></span>
+     <span id="sl_i1" class="sl_command sl_i"></span>
+     <span id="sl_i2" class="sl_command sl_i"></span>
+     <span id="sl_i3" class="sl_command sl_i"></span>
+     <span id="sl_i4" class="sl_command sl_i"></span>
+
+     	<div id="slideshow">
+     			<a class="play_commands pause" href="#sl_pause" title="Maintain paused">Pause</a>
+     		<a class="play_commands play" href="#sl_play" title="Play the animation">Play</a>
+     		<a class="commands prev commands1" href="#sl_i4" title="Go to last slide">&lt;</a>
+     		<a class="commands next commands1" href="#sl_i2" title="Go to 2nd slide">&gt;</a>
+     		<a class="commands prev commands2" href="#sl_i1" title="Go to 1rst slide">&lt;</a>
+     		<a class="commands next commands2" href="#sl_i3" title="Go to 3rd slide">&gt;</a>
+     		<a class="commands prev commands3" href="#sl_i2" title="Go to 2nd slide">&lt;</a>
+     		<a class="commands next commands3" href="#sl_i4" title="Go to 4th slide">&gt;</a>
+     		<a class="commands prev commands4" href="#sl_i3" title="Go to 3rd slide">&lt;</a>
+     		<a class="commands next commands4" href="#sl_i1" title="Go to first slide">&gt;</a>
+
+
+
+     		<div class="container">
+     			<div class="c_slider"></div>
+     			<div class="slider">
+
+     		</div>
+
+     		<span id="timeline"></span>
+
+     		<ul class="dots_commands"><!--
+     			--><li><a title="Show slide 1" href="#sl_i1">Slide 1</a></li><!--
+     			--><li><a title="Show slide 2" href="#sl_i2">Slide 2</a></li><!--
+     			--><li><a title="Show slide 3" href="#sl_i3">Slide 3</a></li><!--
+     			--><li><a title="Show slide 4" href="#sl_i4">Slide 4</a></li>
+     		</ul>
+
+                      <div class="row clearfix" id="bar">
+                               <div id="drop">
+                   القائمة
+                 </div>
+                       <ul class="nav nav-tabs">
+                         <li >
+                                                       <a href="do.html">الطبيب</a>
+                       
+
+
+
+
+<div id="drop-list">
+                     <div class="drop-list"><a href="do.html">اضافة طبيب</a></div>
+                     <div class="drop-list"><a href="deletemp.php">حذف طبيب</a></div>
+                     <div class="drop-list"><a href="select.php">تعديل بيانات طبيب</a></div>
+                     <div class="drop-list"><a href="category.html">حذف كل الاطباء</a></div>
+                     </div><!--drop-list--> 
+        
+		
+
+
+                         <li>
+                                                        <a href="csh.html">اضافة قسم</a>
+                         
+
+
+<div id="drop-list">
+                     <div class="drop-list"><a href="category.html">اضافة قسم</a></div>
+                     <div class="drop-list"><a href="category.html">حذف قسم</a></div>
+                     <div class="drop-list"><a href="category.html">تعديل بيانات قسم</a></div>
+                     <div class="drop-list"><a href="category.html">حذف كل الاقسام</a></div>
+                     </div><!--drop-list-->
+
+</li>
+
+                         <li>
+                                                        <a href="mard.html">اضافة مريض</a>
+                         
+
+
+<div id="drop-list">
+                     <div class="drop-list"><a href="category.html">اضافة مريض</a></div>
+                     <div class="drop-list"><a href="category.html">حذف مريض</a></div>
+                     <div class="drop-list"><a href="category.html">تعديل بيانات مريض</a></div>
+                     <div class="drop-list"><a href="category.html">حذف كل المرضا</a></div>
+                     </div><!--drop-list-->
+
+</li>
+
+                         <li>
+                            <a href="ard.html">الايرادات</a>
+                        
+
+<div id="drop-list">
+                     <div class="drop-list"><a href="category.html">اضافة ايراد</a></div>
+                     <div class="drop-list"><a href="category.html">حذف ايراد</a></div>
+                     <div class="drop-list"><a href="category.html">تعديل بيانات ايراد</a></div>
+                     <div class="drop-list"><a href="category.html">حذف كل الايرادات</a></div>
+                     </div><!--drop-list-->
+
+
+
+ </li>
+
+
+                                                   <li>
+                                                      <a href="maml.html">المعمل</a>
+                                                   
+
+<div id="drop-list">
+                     <div class="drop-list"><a href="category.html">اضافة معمل</a></div>
+                     <div class="drop-list"><a href="category.html">حذف معمل</a></div>
+                     <div class="drop-list"><a href="category.html">تعديل بيانات معمل</a></div>
+                     <div class="drop-list"><a href="category.html">حذف كل المعامل</a></div>
+                     </div><!--drop-list-->
+
+
+
+</li>
+
+                                                   <li>
+                                                      <a href="asal.html">الايصالات</a>
+                                                  
+
+
+<div id="drop-list">
+                     <div class="drop-list"><a href="category.html">اضافةايصال</a></div>
+                     <div class="drop-list"><a href="category.html">حذف ايصال</a></div>
+                     <div class="drop-list"><a href="category.html">تعديل بيانات ايصال</a></div>
+                     <div class="drop-list"><a href="category.html">حذف كل الايصالات</a></div>
+                     </div><!--drop-list-->
+
+
+ </li>
+
+                                                   <li>
+                                                                               
+
+
+                       </ul>
+                 </div>
+
+<br/>
+<br/>
+
+<br/>
+<br/>
+				 
+
+				 
+				 
+<table border="1" width="500%" align="right" bordercolor="#000000">
+<tr>
+<td width="44%" align="center"><b> خدمــــــــــــــــــــــــــــــات</b></td>
+
+<table>
+<br/>
+<table border="0" width="22%" align="right" bordercolor="#000000">
+<tr>
+<td width="22%" align="center">  
+
+<form>
+
+<br/>
+<form>
+ <b></b></td>
+<td width="44" align="center"><b></b></td>
+<td width="44" align="center"><b></b></td>
+
+
+<table>
+<table id="abd" border="0" align="right" cellpadding"7">
+</tr>
+
+<tr>
+
+<td id="java"></td>
+
+<td id="a">
+
+
+
+
+</td>
+<td id="b"></td>
+</tr>
+<table>
+
+				 
+				 
+				 
+				 
+
+
+                       </p>
+                    </div>
+              </div>
+           </div>
+           </div>
+        </body>
+     <script>
+
+                 var bottom_of_object = $('.outer').offset().top + $('.outer').outerHeight();
+                 var bottom_of_window = $(window).scrollTop() + $(window).height();
+                 if( bottom_of_window > bottom_of_object ){
+                     $('.right').animate({'opacity':'1','right':'0px'},1000);
+                     $('.left').animate({'opacity':'1','left':'0px'},1000);
+                     $('.top').animate({'opacity':'1','top':'0px'},1000);
+                     $('.bottom').animate({'opacity':'1','bottom':'0px'},1000);
+                     $('.scale').animate({'width':'100%','height':'100%'},1000);
+                 }
+
+     </script>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+           <script type="text/javascript" src="js/bootstrap.min.js"></script>
+           <script type="text/javascript" src="js/scripts.js"></script>
+           <script type="text/javascript" src="js/slider-js.js"></script>
+            <script type="text/javascript">
+     $('.pgwMenu').pgwMenu();
+     $('a[data-goto]').click(function() { pgwjs.goTo($(this).attr('data-goto')); });
+     var pgwSlider=$('.pgwSlider').pgwSlider();function reloadSlider(){var newConfig={};var listPosition=$('input[name=\"listPosition\"]:checked').val();if(listPosition=='none'){newConfig.displayList=false;}else{newConfig.listPosition=listPosition;}newConfig.selectionMode=$('input[name=\"selectionMode\"]:checked').val();newConfig.transitionEffect=$('input[name=\"transitionEffect\"]:checked').val();if($('#displayControls:checked').val()=='true'){newConfig.displayControls=true;}if($('#verticalCentering:checked').val()=='true'){newConfig.verticalCentering=true;}if($('#adaptiveHeight:checked').val()=='true'){newConfig.adaptiveHeight=true;}if($('#maxHeight:checked').val()=='true'){newConfig.maxHeight=300;}pgwSlider.reload(newConfig);}$('.sliderConfig input').bind('change',function(){reloadSlider()});(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-59412371-1','auto');ga('send','pageview');
+     </script>
+     <script>
+     $(function(){
+         $('.says-loop:gt(0)').hide();
+         setInterval(function(){
+           $('.says-loop:first-child').fadeOut()
+              .next().fadeIn()
+              .end().appendTo('.says');},
+           3000);
+     });
+     </script>
+     </html>
